@@ -1,0 +1,9 @@
+<h2>Personagens Principais</h2>
+<ul>
+  <div class="containerPersonagem" *ngFor="let item of personagensData">
+    <div class="nomePersonagem">{{ item.name }}</div>
+    <div class="status"> {{item.status}} </div>
+    <div> {{item.species}} </div>
+    <br /><img src="{{ item.image }}" alt="" />
+  </div>
+</ul>
